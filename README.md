@@ -19,8 +19,19 @@ Or install it yourself as:
     $ gem install view_footer_copyright
 
 ## Usage
+Example Usage:
+In your application controller:
+```ruby
+before_action :set_copyright
 
-TODO: Write usage instructions here
+def set_copyright
+  @copyright = ViewFooterCopyright::Renderer.copyright 'Jim Padilla', 'All rights reserved'
+end
+```
+On a views html.erb file:
+```html
+ <%= @copyright %>
+```
 
 ## Development
 
@@ -30,7 +41,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/view_footer_copyright. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jpcodes/view_footer_copyright. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

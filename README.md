@@ -14,10 +14,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install view_footer_copyright
-
 ## Usage
 Example Usage:
 In your application controller:

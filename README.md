@@ -7,16 +7,12 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'view_footer_copyright'
+gem 'view_footer_copyright', git: 'https://github.com/JPCodes/copyright-generator-gem'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install view_footer_copyright
 
 ## Usage
 Example Usage:
